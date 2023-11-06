@@ -4,6 +4,11 @@ return {
     opts = {
       servers = {
         omnisharp = {},
+        dartls = {},
+        yamlls = {},
+        cssls = {},
+        cssmodules_ls = {},
+        tsserver = {},
       },
     },
   },
