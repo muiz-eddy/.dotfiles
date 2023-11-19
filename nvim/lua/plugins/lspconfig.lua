@@ -4,11 +4,17 @@ return {
     opts = {
       servers = {
         omnisharp = {},
-        dartls = {},
-        yamlls = {},
-        cssls = {},
-        cssmodules_ls = {},
-        tsserver = {},
+        clangd = {
+          cmd = {
+            "clangd",
+            "--offset-encoding=utf-16",
+          },
+        },
+        -- dartls = {},
+        -- yamlls = {},
+        -- cssls = {},
+        -- cssmodules_ls = {},
+        -- tsserver = {},
       },
     },
   },
