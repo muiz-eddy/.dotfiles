@@ -10,7 +10,7 @@ return {
             "--offset-encoding=utf-16",
           },
         },
-        phpactor = {},
+        intelephense = {},
         -- dartls = {},
         -- yamlls = {},
         -- cssls = {},
