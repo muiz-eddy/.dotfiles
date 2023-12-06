@@ -4,7 +4,13 @@ return {
 	event = "VeryLazy",
 	config = function()
 		require'nvim-treesitter.configs'.setup {
-			ensure_installed = {'lua', 'php', 'cpp'},
+			ensure_installed = {
+				'lua',
+				'php',
+				'cpp',
+				'html',
+				'css',
+			},
 			sync_install = false,
 			highlight = { enable = true, },
 			indent = {enable = true, }
