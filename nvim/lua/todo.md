@@ -1,3 +1,3 @@
 #To Add : </br>
-Formatter </br>
-Linter
+Formatter (conform.nvim) </br>
+Linter (nvim-lint) (</br>
