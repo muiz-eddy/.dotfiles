@@ -10,6 +10,7 @@ return {
 				'cpp',
 				'html',
 				'css',
+				'javascript',
 			},
 			sync_install = false,
 			highlight = { enable = true, },
