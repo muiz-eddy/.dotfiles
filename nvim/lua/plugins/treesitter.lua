@@ -11,7 +11,6 @@ return {
 				"html",
 				"css",
 				"javascript",
-				"markdown",
 			},
 			sync_install = false,
 			highlight = { enable = true },
