@@ -4,11 +4,15 @@ local opt = vim.opt
 opt.number = true
 
 -- show text-width to 80
-opt.textwidth = 80
-opt.colorcolumn = "80"
+opt.textwidth = 120
+opt.colorcolumn = "120"
 
 -- tab width
-opt.tabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 2
+opt.shiftwidth = 2
 opt.expandtab = true
-opt.softtabstop = 4
+opt.softtabstop = 2
+opt.autoindent = true
+
+--search settings
+opt.ignorecase = true

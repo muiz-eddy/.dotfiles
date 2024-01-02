@@ -6,12 +6,11 @@ return {
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
-			markdown = { "vale" },
 			javascript = { "eslint_d" },
 			typescript = { "eslint_d" },
 			typescriptreact = { "eslint_d" },
 			javascriptreact = { "eslint_d" },
-			php = { "php" },
+			php = { "phpcs" },
 			cpp = { "cpplint" },
 		}
 
