@@ -31,7 +31,7 @@ return{
       -- And you can configure cmp even more, if you want to.
       local cmp = require('cmp')
       local cmp_action = lsp_zero.cmp_action()
-
+      
       cmp.setup({
         formatting = lsp_zero.cmp_format(),
         mapping = cmp.mapping.preset.insert({
@@ -74,6 +74,7 @@ return{
             local lua_opts = lsp_zero.nvim_lua_ls()
             require('lspconfig').lua_ls.setup(lua_opts)
           end,
+          require('lspconfig').dartls.setup({})
         }
       })
     end
