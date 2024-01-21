@@ -1,12 +1,17 @@
 
 return {
 	'nvim-telescope/telescope.nvim', tag = '0.1.4',
-	dependencies = { 'nvim-lua/plenary.nvim' },
+	dependencies = { 'nvim-lua/plenary.nvim',  { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+    "nvim-tree/nvim-web-devicons",
+  },
 	config = function()
 		local builtin = require('telescope.builtin')
-		local map = vim.keymap
-		vim.keymap.set('n', '<leader>fp', builtin.find_files, {})
-		vim.keymap.set('n', '<leader>gf', builtin.git_files, {}) -- Doesn't actually work --
-		vim.keymap.set('n', '<leader>ps', function() builtin.grep_string({search = vim.fn.input("Grep > ")}) end)
+    local telescope = require('telescope')
+    telescope.load_extension("fzf")
+		local keymap = vim.keymap
+		keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
+    keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })
+    keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
+    keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
 	end
 }
