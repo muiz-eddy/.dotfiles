@@ -103,6 +103,10 @@ source $ZSH/oh-my-zsh.sh
 alias zshcon="nvim ~/.zshrc"
 alias nvimcon="nvim ~/.config/nvim"
 alias vim="nvim"
+alias testing="cd ~/documents/for-testing"
+alias p2p="cd ~/documents/p2p/dst-apps-monorepo"
+alias components="cd ~/documents/dst-apps-monorepo"
+alias cashback="cd ~/documents/cashback"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export NVM_DIR="$HOME/.nvm"
