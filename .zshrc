@@ -107,6 +107,8 @@ alias testing="cd ~/documents/for-testing"
 alias p2p="cd ~/documents/p2p/dst-apps-monorepo"
 alias components="cd ~/documents/dst-apps-monorepo"
 alias cashback="cd ~/documents/cashback"
+alias mydst2="cd ~/documents/mydst2"
+alias flavdev="flutter run --dart-define-from-file keys.json --flavor development --target lib/main_development.dart"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export NVM_DIR="$HOME/.nvm"
