@@ -18,6 +18,11 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 			javascript = { "prettierd" },
+      typescript = { "prettierd" },
+      typescriptreact = { "prettierd" },
+      html = { "prettierd" },
+      json = { "prettierd" },
+      css = { "prettierd" },
 			php = { "php-cs-fixer" },
 		},
 		--Set up format-on-save
