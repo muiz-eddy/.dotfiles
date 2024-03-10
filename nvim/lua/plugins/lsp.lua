@@ -94,7 +94,7 @@ return{
       end)
 
       require('mason-lspconfig').setup({
-        ensure_installed = {'tsserver','intelephense', 'html', 'cssls', 'eslint'},
+        ensure_installed = {'tsserver','intelephense', 'html', 'cssls', 'eslint', 'gopls'},
         handlers = {
           lsp_zero.default_setup,
           lua_ls = function()
