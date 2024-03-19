@@ -17,3 +17,5 @@ opt.autoindent = true
 
 --search settings
 opt.ignorecase = true
+
+
