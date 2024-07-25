@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-# Example aliases
+
 alias zshcon="nvim ~/.zshrc"
 alias nvimcon="nvim ~/.config/nvim"
 alias vim="nvim"
@@ -108,6 +108,9 @@ alias p2p="cd ~/documents/p2p/dst-apps-monorepo"
 alias components="cd ~/documents/dst-apps-monorepo"
 alias cashback="cd ~/documents/cashback"
 alias mydst2="cd ~/documents/mydst2"
+alias golang="cd ~/documents/golang"
+
+
 alias flavdev="flutter run --dart-define-from-file keys.json --flavor development --target lib/main_development.dart"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
@@ -121,3 +124,5 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$ANDROID_HOME/emulator/:$PATH
 export PATH=$ANDROID_HOME/platform-tools/:$PATH
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin/:$PATH
+
+PATH=~/.console-ninja/.bin:$PATH
