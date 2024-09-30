@@ -75,6 +75,8 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting)
 
+source <(fzf --zsh)
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -99,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-
+# Alias path for project
 alias zshcon="nvim ~/.zshrc"
 alias nvimcon="nvim ~/.config/nvim"
 alias vim="nvim"
@@ -110,8 +112,9 @@ alias cashback="cd ~/documents/cashback"
 alias mydst2="cd ~/documents/mydst2"
 alias golang="cd ~/documents/golang"
 
-
+# Alias path for utility
 alias flavdev="flutter run --dart-define-from-file keys.json --flavor development --target lib/main_development.dart"
+alias runP2P="yarn workspace p2p dev" # only work in the directory itself 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export NVM_DIR="$HOME/.nvm"

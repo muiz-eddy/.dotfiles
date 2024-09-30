@@ -5,7 +5,7 @@ return {
     sticky = true,
     toggler = {
      line = 'gcc',
-      block = 'gbc'
+     block = 'gbc'
     }
   },
   lazy = false,

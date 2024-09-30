@@ -5,8 +5,8 @@ local opt = vim.opt
 opt.relativenumber = true
 
 -- show text-width to 80
-opt.textwidth = 120
-opt.colorcolumn = "120"
+opt.textwidth = 80
+opt.colorcolumn = "80"
 
 -- tab width
 opt.tabstop = 2
