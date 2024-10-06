@@ -7,7 +7,6 @@ return {
 
 		lint.linters_by_ft = {
 			php = { "phpcs" },
-			cpp = { "cpplint" },
       typescript = { "eslint" },
 		}
 

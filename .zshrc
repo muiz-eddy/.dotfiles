@@ -106,7 +106,7 @@ alias zshcon="nvim ~/.zshrc"
 alias nvimcon="nvim ~/.config/nvim"
 alias vim="nvim"
 alias testing="cd ~/documents/for-testing"
-alias p2p="cd ~/documents/p2p/dst-apps-monorepo"
+alias p2p="cd ~/documents/dst-apps-monorepo"
 alias components="cd ~/documents/dst-apps-monorepo"
 alias cashback="cd ~/documents/cashback"
 alias mydst2="cd ~/documents/mydst2"
@@ -129,3 +129,4 @@ export PATH=$ANDROID_HOME/platform-tools/:$PATH
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin/:$PATH
 
 PATH=~/.console-ninja/.bin:$PATH
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
