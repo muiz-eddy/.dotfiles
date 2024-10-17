@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -105,15 +112,17 @@ source $ZSH/oh-my-zsh.sh
 alias zshcon="nvim ~/.zshrc"
 alias nvimcon="nvim ~/.config/nvim"
 alias vim="nvim"
-alias testing="cd ~/documents/for-testing"
 alias p2p="cd ~/documents/dst-apps-monorepo"
+alias dst-backend="cd ~/documents/backend/dst-apps-monorepo"
 alias components="cd ~/documents/dst-apps-monorepo"
-alias cashback="cd ~/documents/cashback"
 alias mydst2="cd ~/documents/mydst2"
-alias golang="cd ~/documents/golang"
+alias lg="lazygit"
 
 # Alias path for utility
-alias flavdev="flutter run --dart-define-from-file keys.json --flavor development --target lib/main_development.dart"
+alias flavdev="flutter run --dart-define-from-file keys.json --flavor development --target lib/main_development.dart --debug"
+alias flavstg="flutter run --dart-define-from-file keys.json --flavor staging --target lib/main_staging.dart --debug"
+alias flavprod="flutter run --dart-define-from-file keys.json --flavor production --target lib/main_production.dart --debug"
+alias flavstgrelease="flutter run --dart-define-from-file keys.json --release --flavor production --target lib/main_production.dart"
 alias runP2P="yarn workspace p2p dev" # only work in the directory itself 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
@@ -130,3 +139,8 @@ export PATH=$ANDROID_HOME/cmdline-tools/latest/bin/:$PATH
 
 PATH=~/.console-ninja/.bin:$PATH
 export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
