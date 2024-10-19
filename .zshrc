@@ -122,7 +122,7 @@ alias lg="lazygit"
 alias flavdev="flutter run --dart-define-from-file keys.json --flavor development --target lib/main_development.dart --debug"
 alias flavstg="flutter run --dart-define-from-file keys.json --flavor staging --target lib/main_staging.dart --debug"
 alias flavprod="flutter run --dart-define-from-file keys.json --flavor production --target lib/main_production.dart --debug"
-alias flavstgrelease="flutter run --dart-define-from-file keys.json --release --flavor production --target lib/main_production.dart"
+alias flavstgrelease="flutter run --dart-define-from-file keys.json --release --flavor stating --target lib/main_staging.dart"
 alias runP2P="yarn workspace p2p dev" # only work in the directory itself 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
