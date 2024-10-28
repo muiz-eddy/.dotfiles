@@ -117,6 +117,9 @@ alias dst-backend="cd ~/documents/backend/dst-apps-monorepo"
 alias components="cd ~/documents/dst-apps-monorepo"
 alias mydst2="cd ~/documents/mydst2"
 alias lg="lazygit"
+alias otreader="cd ~/documents/CPP/overtime-reader"
+alias g++='g++ -std=c++17'
+alias clang++='clang++ -std=c++17'
 
 # Alias path for utility
 alias flavdev="flutter run --dart-define-from-file keys.json --flavor development --target lib/main_development.dart --debug"
@@ -141,6 +144,9 @@ PATH=~/.console-ninja/.bin:$PATH
 export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
