@@ -142,6 +142,9 @@ PATH=~/.console-ninja/.bin:$PATH
 export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
