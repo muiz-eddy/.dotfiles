@@ -117,6 +117,7 @@ alias dst-backend="cd ~/documents/backend/dst-apps-monorepo"
 alias components="cd ~/documents/dst-apps-monorepo"
 alias mydst2="cd ~/documents/mydst2"
 alias lg="lazygit"
+alias learngo="cd ~/documents/learngo"
 
 # Alias path for utility
 alias flavdev="flutter run --dart-define-from-file keys.json --flavor development --target lib/main_development.dart --debug"
@@ -144,3 +145,6 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/.dotfiles/.p10k.zsh.
+[[ ! -f ~/.dotfiles/.p10k.zsh ]] || source ~/.dotfiles/.p10k.zsh
