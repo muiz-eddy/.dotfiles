@@ -9,6 +9,7 @@ opt.relativenumber = true
 -- show text-width to 80
 opt.textwidth = 80
 opt.colorcolumn = "80"
+opt.wrap = false
 
 -- tab width
 opt.tabstop = 2
@@ -19,5 +20,6 @@ opt.autoindent = true
 
 --search settings
 opt.ignorecase = true
+
 
 
