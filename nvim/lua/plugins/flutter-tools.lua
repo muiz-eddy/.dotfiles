@@ -1,30 +1,33 @@
-return {
-  'akinsho/flutter-tools.nvim',
-  lazy = false,
-  dependencies = {
-    'nvim-lua/plenary.nvim',
-    'stevearc/dressing.nvim', -- optional for vim.ui.select
-  },
-  config = function()
-    require('flutter-tools').setup {
-      debugger = {
-        enabled = false,
-        run_via_dap = false,
-        register_configurations = function(_)
-          require("dap").configurations.dart = {
-            {
-              type = "dart",
-              request = "launch",
-              name = "Launch dart",
-              dartSdkPath = "/Users/muiz_eddy/development/flutter/bin/cache/dart-sdk", -- Replace with actual path
-              flutterSdkPath = "/Users/muiz_eddy/development/flutter", -- Replace with actual path
-              program = "${workspaceFolder}/lib/main_development.dart",
-              cwd = vim.fn.getcwd(), -- Can also use vim.fn.getcwd() if workspaceFolder isn't set
-            }
-          }
-          require("dap.ext.vscode").load_launchjs() -- Ensure this is correctly positioned
-        end,
-      },
-    }
-  end,
-}
+-- return {
+--   'akinsho/flutter-tools.nvim',
+--   lazy = false,
+--   dependencies = {
+--     'nvim-lua/plenary.nvim',
+--     'stevearc/dressing.nvim', 
+--   },
+--   config = function()
+--     local dap = require('dap')
+--     require('flutter-tools').setup {
+--       debugger = {
+--         enabled = true,
+--         run_via_dap = true,
+--         register_configurations = function(_)
+--           -- dap.adapters.dart = {
+--           --   type = "executable",
+--           --   command = "dart",
+--           --   args = { "debug_adapter" },
+--           -- }
+--           --
+--           -- dap.adapters.flutter = {
+--           --   type = "executable",
+--           --   command = "flutter",
+--           --   args = { "debug_adapter" },
+--           -- }
+--           require("dap").configurations.dart = {}
+--           require("dap.ext.vscode").load_launchjs() 
+--         end,
+--       },
+--     }
+--     vim.keymap.set('n', '<leader>r', require('telescope').extensions.flutter.commands, { desc = 'Open command Flutter' })
+--   end,
+-- }
