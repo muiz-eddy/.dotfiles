@@ -7,7 +7,7 @@ config.color_scheme = 'catppuccin-mocha'
 config.font =
   wezterm.font('JetBrains Mono')
 
-config.font_size = 22.0
+config.font_size = 20.0
 
 config.enable_tab_bar = false;
 
