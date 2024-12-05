@@ -4,6 +4,7 @@ return {
 
   dependencies = {
 
+      "nvim-neotest/nvim-nio",
     -- fancy UI for the debugger
     {
       "rcarriga/nvim-dap-ui",
@@ -43,18 +44,12 @@ return {
       dependencies = "mason.nvim",
       cmd = { "DapInstall", "DapUninstall" },
       opts = {
-        -- Makes a best effort to setup the various debuggers with
-        -- reasonable debug configurations
         automatic_installation = true,
 
-        -- You can provide additional configuration to the handlers,
-        -- see mason-nvim-dap README for more information
         handlers = {},
 
-        -- You'll need to check that you have the required things installed
-        -- online, please don't ask me how to install them :)
         ensure_installed = {
-          -- Update this to ensure that you have the debuggers for the langs you want
+            "dart"
         },
       },
     },
@@ -81,16 +76,4 @@ return {
     { "<leader>dw", function() require("dap.ui.widgets").hover() end, desc = "Widgets" },
   },
 
-  config = function()
-    local Config = require("lazyvim.config")
-    vim.api.nvim_set_hl(0, "DapStoppedLine", { default = true, link = "Visual" })
-
-    for name, sign in pairs(Config.icons.dap) do
-      sign = type(sign) == "table" and sign or { sign }
-      vim.fn.sign_define(
-        "Dap" .. name,
-        { text = sign[1], texthl = sign[2] or "DiagnosticInfo", linehl = sign[3], numhl = sign[3] }
-      )
-    end
-  end,
 }}
